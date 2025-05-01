@@ -111,7 +111,7 @@
 
 @layer components {
   .post-card {
-    @apply group overflow-hidden rounded-lg border border-border transition-all hover:shadow-md;
+    @apply overflow-hidden rounded-lg border border-border transition-all hover:shadow-md;
   }
   
   .post-card-image {
