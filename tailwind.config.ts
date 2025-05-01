@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,34 +62,80 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				forest: {
+					50: '#f0f5f0',
+					100: '#dde9dd',
+					200: '#bbd5bc',
+					300: '#92bc93',
+					400: '#6a9e6b',
+					500: '#4b814c',
+					600: '#3a673c',
+					700: '#2f5231',
+					800: '#274228',
+					900: '#213723',
+					950: '#0e1d0f',
+				},
+				earth: {
+					50: '#f9f6f0',
+					100: '#f0e9dd',
+					200: '#e0ceb9',
+					300: '#d1ad8e',
+					400: '#c18e6b',
+					500: '#b47854',
+					600: '#a46345',
+					700: '#88503c',
+					800: '#6f4335',
+					900: '#5c392e',
+					950: '#301c16',
+				},
+				trail: {
+					50: '#f0f4f8',
+					100: '#dce7f0',
+					200: '#bfd2e3',
+					300: '#95b3d1',
+					400: '#668fb8',
+					500: '#486fa1',
+					600: '#385988',
+					700: '#304a70',
+					800: '#2b3f5c',
+					900: '#27374d',
+					950: '#192234',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			fontFamily: {
+				heading: ['Montserrat', 'sans-serif'],
+				sans: ['Inter', 'sans-serif'],
+			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' },
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' },
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
 					},
-					to: {
-						height: '0'
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
 					}
-				}
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out'
 			}
 		}
 	},
